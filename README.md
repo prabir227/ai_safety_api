@@ -1,7 +1,3 @@
-Sure! Here's the updated README with the curl examples removed and a section added for creating a `.env` file:
-
----
-
 # HumanChain AI Safety - Incident Log API
 
 ## Project Overview
