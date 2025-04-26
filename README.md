@@ -43,8 +43,8 @@ Follow these steps to run the project locally.
 
    Clone the project repository to your local machine using Git:
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/prabir227/ai_safety_api.git
+   cd ai_safety_api
    ```
 
 2. **Install Dependencies**
@@ -64,11 +64,10 @@ Follow these steps to run the project locally.
 
    Create a `.env` file in the root directory of the project with the following content:
    ```env
-   MONGODB_URI=<your-mongodb-atlas-uri>
+   MONGODB_URI=mongodb+srv://prabirghosh:227Prabir@cluster0.e8hzg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
    PORT=5000
    ```
 
-   Replace `<your-mongodb-atlas-uri>` with your MongoDB Atlas connection string.
 
 4. **Run the Application**
 
@@ -162,5 +161,3 @@ This project does not currently include automated tests, but you can use tools l
 This project is a basic API service to manage AI safety incidents. It follows common backend development practices, such as using **Express.js** for handling HTTP requests and **MongoDB Atlas** for data persistence. The goal is to provide a simple, scalable API for managing AI safety incidents and to serve as a foundational part of **HumanChain's** AI safety efforts.
 
 ---
-
-Let me know if you need any further changes or additions to this README!
