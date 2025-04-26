@@ -1,7 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import Incident from '../models/incidentModel';
 
-// Create a new incident
 export const createIncident = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const incident = await Incident.create(req.body);
@@ -11,7 +10,6 @@ export const createIncident = async (req: Request, res: Response, next: NextFunc
   }
 };
 
-// Get all incidents
 export const getAllIncidents = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const incidents = await Incident.find().sort({ reported_at: -1 });
@@ -21,7 +19,6 @@ export const getAllIncidents = async (req: Request, res: Response, next: NextFun
   }
 };
 
-// Get single incident by ID
 export const getIncidentById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const incident = await Incident.findById(req.params.id);
@@ -35,7 +32,6 @@ export const getIncidentById = async (req: Request, res: Response, next: NextFun
   }
 };
 
-// Delete incident by ID
 export const deleteIncidentById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const incident = await Incident.findByIdAndDelete(req.params.id);
